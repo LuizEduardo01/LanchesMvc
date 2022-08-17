@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "fqnOEQr4HrLMjPh429eQ13KFRIBFiFC5bzl/YDeX8xk=",
+  "Hash": "wU7w5VjeOuqvwH6axGM31YqpwTyzpLmyIBlhtPSJ+Aw=",
   "Source": "LanchesMac",
   "BasePath": "_content/LanchesMac",
   "Mode": "Default",
@@ -372,6 +372,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\login1.jpg"
+    },
+    {
+      "Identity": "C:\\Dudu\\Documentos\\Documentos\\Curso Udemy\\ASP.NETCoreMVCMacoratti\\LanchesMac\\LanchesMac\\wwwroot\\images\\logo lanche 1.jpg",
+      "SourceId": "LanchesMac",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Dudu\\Documentos\\Documentos\\Curso Udemy\\ASP.NETCoreMVCMacoratti\\LanchesMac\\LanchesMac\\wwwroot\\",
+      "BasePath": "_content/LanchesMac",
+      "RelativePath": "images/logo lanche 1.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\logo lanche 1.jpg"
     },
     {
       "Identity": "C:\\Dudu\\Documentos\\Documentos\\Curso Udemy\\ASP.NETCoreMVCMacoratti\\LanchesMac\\LanchesMac\\wwwroot\\images\\negado1.jpg",

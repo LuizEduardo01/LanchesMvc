@@ -14,13 +14,13 @@ namespace LanchesMac.Areas.Admin.Services
 
         public List<LancheGrafico> GetVendasLanches(int dias = 360)
         {
-            var data = DateTime.Now.AddDays(dias);
+            var data = DateTime.Now.AddDays(-dias);
 
             var lanches = (from pd in context.PedidoDetalhes
                            join l in context.Lanches on pd.LancheId equals l.LancheId
                            where pd.Pedido.PedidoEnviado >= 
                            data group pd by new { pd
-                           .LancheId, l.Nome, pd.Quantidade}
+                           .LancheId, l.Nome}
                            into g
                            select new
                            {
@@ -28,16 +28,16 @@ namespace LanchesMac.Areas.Admin.Services
                                LanchesQuantidade = g.Sum(q => q.Quantidade),
                                LanchesValorTotal = g.Sum(a => a.Preco * a.Quantidade)
                            });
-            var list = new List<LancheGrafico>();
+            var lista = new List<LancheGrafico>();
             foreach(var item in lanches)
             {
                 var lanche = new LancheGrafico();
                 lanche.LancheNome = item.LancheNome;
                 lanche.LanchesQuantidade = item.LanchesQuantidade;
                 lanche.LanchesValorTotal = item.LanchesValorTotal;
-                list.Add(lanche);
+                lista.Add(lanche);
             }
-            return list;
+            return lista;
         }
     }
 }
